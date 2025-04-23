@@ -8,11 +8,11 @@
 📒 Notes
 * Add, edit, and delete personal notes
 * Secure and user-specific note storage
-* 
+  
 📝 Homework Track daily homework assignments
 * Mark as complete/incomplete
 * Due date management
-* 
+  
 📋 To-Do
 * Simple task management
 * Add and remove tasks easily
@@ -20,20 +20,20 @@
 Track task completion
 * 📺 YouTube
 * Search YouTube videos directly from the portal
-* 
+ 
 Get top 10 relevant results with thumbnails and links
 * 📚 Wikipedia
 * Enter a topic to get a quick summary from Wikipedia
 * Displays page title, summary, and a direct link
-* 
+ 
 📖 Dictionary
 * Enter any word to get its meaning, pronunciation, and examples
 * Powered by a public dictionary API
-* 
+ 
 📘 Books
 * Search for books by title/author using the Google Books API
 * View descriptions, preview links, and other details
-* 
+ 
 🔁 Conversion
 * Unit converter (Length and Mass supported)
 * Convert between units like meters, kilometers, grams, pounds, etc.
