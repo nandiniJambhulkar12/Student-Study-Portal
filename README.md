@@ -16,13 +16,13 @@
 📋 To-Do
 * Simple task management
 * Add and remove tasks easily
-  
-Track task completion
-* 📺 YouTube
+* Track task completion
+
+ 📺 YouTube
 * Search YouTube videos directly from the portal
- 
-Get top 10 relevant results with thumbnails and links
-* 📚 Wikipedia
+* Get top 10 relevant results with thumbnails and links
+  
+ 📚 Wikipedia
 * Enter a topic to get a quick summary from Wikipedia
 * Displays page title, summary, and a direct link
  
