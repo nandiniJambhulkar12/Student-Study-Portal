@@ -126,50 +126,6 @@ def delete_homework(request,pk=None):
 
 
 
-# for the youtube section 
-# def youtube(request):
-#     if request.method == "POST":
-#         form = DashboardForm(request.POST)
-#         if form.is_valid():
-#             text = form.cleaned_data['text']
-#             video = VideosSearch(text, limit=10)
-#             result_list = []
-
-#             for i in video.result()['result']:
-#                 result_dict = {
-#                     'input': text,
-#                     'title': i.get('title'),
-#                     'duration': i.get('duration'),
-#                     'thumbnail': i.get('thumbnails')[0]['url'] if i.get('thumbnails') else '',
-#                     'channel': i.get('channel', {}).get('name'),
-#                     'link': i.get('link'),
-#                     'views': i.get('viewCount', {}).get('short'),
-#                     'published': i.get('publishedTime'),
-#                 }
-
-#                 # Fix: variable name was `dec` instead of `desc`
-#                 desc = ''
-#                 if i.get('descriptionSnippet'):
-#                     for j in i['descriptionSnippet']:
-#                         desc += j.get('text', '')
-#                 result_dict['description'] = desc
-
-#                 result_list.append(result_dict)
-
-#             context = {
-#                 'form': form,
-#                 'results': result_list
-#             }
-#             return render(request, 'dashboard/youtube.html', context)
-
-#     else:
-#         form = DashboardForm()
-        
-#     context = {'form': form}
-#     return render(request, 'dashboard/youtube.html', context)
-
-
-
 
 def youtube(request):
     if request.method == "POST":
@@ -375,72 +331,6 @@ def wiki(request):
         'form':form
     }
     return render(request,'dashboard/wiki.html',context)
-
-# fro connversion:
-# def conversion(request):
-#     if request.method == "POST":
-#         form = ConversionForm(request.POST)
-#         if request.POST['measurement'] == 'length':
-#             measurement_form = ConversionLengthForm()
-#             context = {
-#                 'form':form,
-#                 'm_form':measurement_form,
-#                 'input':True
-#             }
-#             if 'input' in request.POST:
-#                 first = request.POST['measure1']
-#                 second = request.POST['measure2']
-#                 input = request.POST['input']
-#                 answer =''
-#                 if input and int(input) >=0:
-#                     if first == 'yard' and second == 'foot':
-#                         answer = f'{input} yard = {int(input)*3} foot'
-#                     if first == 'foot' and second == 'yard':
-#                         answer = f'{input} foot = {int(input)/3} yard'
-#                         context ={
-#                             'form':form,
-#                             'm_form':measurement_form,
-#                             'input':True,
-#                             'answer':answer
-#                         }
-                    
-                    
-                    
-#             if request.POST['measurement'] == 'mass':
-                
-#                measurement_form = ConversionMassForm()
-#             context = {
-#                 'form':form,
-#                 'm_form':measurement_form,
-#                 'input':True
-#             }
-#             if 'input' in request.POST:
-#                 first = request.POST['measure1']
-#                 second = request.POST['measure2']
-#                 input = request.POST['input']
-#                 answer =''
-#                 if input and int(input) >=0:
-#                     if first == 'pound' and second == 'kilogram':
-#                         answer = f'{input} pound = {int(input)*0.453592} kilogram'
-#                     if first == 'kilogram' and second == 'pound':
-#                         answer = f'{input} kilogram = {int(input)*2.2062} pound'
-#                         context ={
-#                             'form':form,
-#                             'm_form':measurement_form,
-#                             'input':True,
-#                             'answer':answer
-#                         }
-                    
-            
-#     else:
-        
-        
-#         form = ConversionForm()
-#     context = {
-#         'form':form,
-#         'input':False
-#     }
-#     return render(request,'dashboard/conversion.html',context)
 
 
 
