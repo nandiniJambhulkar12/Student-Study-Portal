@@ -28,11 +28,14 @@ SECRET_KEY = 'django-insecure-l)+z@wh^sd)mg4ng)us5rlv0!3hws(2jia51kv&l4!q(pww%3$
 
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    'student-study-portal-14.onrender.com',  # ✅ Replace with your actual Render domain
-]
+# ALLOWED_HOSTS = [
+#     'localhost',
+#     '127.0.0.1',
+#     'student-study-portal-14.onrender.com',  # ✅ Replace with your actual Render domain
+# ]
+
+ALLOWED_HOSTS = ['*']
+
 
 
 
