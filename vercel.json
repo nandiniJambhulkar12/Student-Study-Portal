@@ -1,16 +1,14 @@
 {
-  "version": 2,
   "builds": [
     {
-      "src": "manage.py",
+      "src": "studentstudyportal/wsgi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "manage.py"
+      "dest": "studentstudyportal/wsgi.py"
     }
   ]
 }
-
