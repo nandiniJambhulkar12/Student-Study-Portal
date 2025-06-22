@@ -23,9 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-l)+z@wh^sd)mg4ng)us5rlv0!3hws(2jia51kv&l4!q(pww%3$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True
+
+
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.vercel.app']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'student-study-portal-12.onrender.com',  # ✅ Replace with your actual Render domain
+]
 
 
 
