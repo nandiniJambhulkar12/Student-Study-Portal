@@ -31,7 +31,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'student-study-portal-12.onrender.com',  # ✅ Replace with your actual Render domain
+    'student-study-portal-14.onrender.com',  # ✅ Replace with your actual Render domain
 ]
 
 
@@ -91,6 +91,10 @@ DATABASES = {
     }
 }
 
+import os
+
+SECRET_KEY = os.environ.get('SECRET_KEY', 'fallback-secret-key')
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
