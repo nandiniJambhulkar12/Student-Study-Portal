@@ -22,3 +22,8 @@ urllib3==2.4.0
 wikipedia==1.4.0
 youtube-search-python==1.6.6
 whitenoise
+Django==5.1.8
+h11==0.16.0
+requests==2.32.4
+urllib3==2.5.0
+
